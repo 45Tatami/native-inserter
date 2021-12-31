@@ -1,22 +1,23 @@
 {
     "manifest_version": 2,
-    "name": "Clipboard Inserter",
-    "version": "0.3.2",
+    "name": "Native Inserter",
+    "version": "1.0.0",
 
-    "description": "A simple addon that inserts clipboard contents into the page. Uses icon made by Google from www.flaticon.com licensed by CC 3.0 BY",
+    "description": "An addon that inserts contents received from a native application into a page. Forked from clipboard-inserter. Uses icon made by Google from www.flaticon.com licensed by CC 3.0 BY",
 
     "icons": {},
 
-    "applications": {
+    "browser_specific_settings": {
 	"gecko": {
-	    "id": "@clipboard-inserter"
+	    "id": "@native-inserter",
+            "strict_min_version": "50.0"
 	}
     },
     
     "permissions": [
 	"activeTab",
-	"clipboardRead",
 	"storage",
+        "nativeMessaging",
 	"file://*/*"
     ],
 
@@ -27,7 +28,7 @@
 	    "32": "icon/icon32.png",
 	    "64": "icon/icon64.png"
 	},
-	"default_title": "Toggle clipboard inserter"
+	"default_title": "Toggle Native Inserter"
     },
     
     "background": {

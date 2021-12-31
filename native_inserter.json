@@ -1,0 +1,7 @@
+{
+  "name": "native_inserter",
+  "description": "Example host for native messaging",
+  "path": "/usr/local/bin/gorecv",
+  "type": "stdio",
+  "allowed_extensions": [ "@native-inserter" ]
+}

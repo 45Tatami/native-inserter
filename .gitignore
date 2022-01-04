@@ -5,3 +5,5 @@
 # Locally built binaries
 /native_application/gorecv
 /example_client/gosend
+
+/web-ext-artifacts
